@@ -1,4 +1,4 @@
-import supabase from "../_lib/supabase";
+import { supabase } from "@/app/_lib/supabase";
 
 export default async function page() {
   const { data, error } = await supabase.from("posts").select("*");
